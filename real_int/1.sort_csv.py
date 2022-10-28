@@ -1,5 +1,28 @@
 import unittest
 
+"""
+Task
+In this challenge, your task is to sort the columns of a CSV file. The contents of the CSV will be provided to you as a string adhering to the description below.
+
+The columns are separated by commas (,)
+The rows are separated by a newline (\n)
+The first line contains the names of the columns
+A blank space counts as an empty string
+Treat every value as a string
+The CSV has a dyamic number of rows and columns
+Write a method that sorts the columns by the names of the columns alphabetically, and case-insensitive.
+
+Specification
+sort_csv_columns(csv_data)
+Takes comma separated values and sorts it alphabetically
+
+Parameters
+csv_data: String - Unsorted CSV
+
+Return Value
+String - Sorted CSV
+"""
+
 def sort_csv_columns(csv_data: str) -> str:
     mapper = {}
     counter = 0
